@@ -11,13 +11,7 @@ class Activity {
 //    val mouse: Mouse = component.getMouse()
 
     @Inject
-    lateinit var keyboard: Keyboard
-    @Inject
-    lateinit var memory: Memory
-    @Inject
-    lateinit var monitor: Monitor
-    @Inject
-    lateinit var mouse: Mouse
+    lateinit var computer: Computer
 
     init {
         DaggerNewComponent.create().inject(this)
